@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp        = require('gulp'),
-		sass        = require('gulp-sass'),
+		sass        = require('gulp-ruby-sass'),
 		jshint      = require('gulp-jshint'),
 		jade        = require('gulp-jade'),
 		browserSync = require('browser-sync'),
@@ -10,9 +10,8 @@ var gulp        = require('gulp'),
 
 // Sass task
 gulp.task('sass', function() {
-	return gulp.src('sass/styles.scss')
-			.pipe(sourcemaps.init())
-			.pipe(sass().on('error', sass.logError))
+	return sass('sass/styles.scss', {sourcemap: true})
+			.on('error', sass.logError)
 			.pipe(sourcemaps.write())
 			.pipe(gulp.dest('css'))
 			.pipe(browserSync.stream())

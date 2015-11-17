@@ -13,10 +13,12 @@
   },
   "homepage": "https://github.com/nguyenmanh1507/simple-pattern#readme",
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "gulp-jade": "^1.1.0",
     "gulp-jshint": "^1.12.0",
     "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
     "jshint-stylish": "^2.1.0"
   }
 }

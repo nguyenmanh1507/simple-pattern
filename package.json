@@ -1,0 +1,22 @@
+{
+  "name": "simple-pattern",
+  "version": "1.0.0",
+  "description": "Simple Pattern Library for the Web",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenmanh1507/simple-pattern.git"
+  },
+  "author": "nguyenmanh1507",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenmanh1507/simple-pattern/issues"
+  },
+  "homepage": "https://github.com/nguyenmanh1507/simple-pattern#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-sass": "^2.1.0",
+    "jshint-stylish": "^2.1.0"
+  }
+}

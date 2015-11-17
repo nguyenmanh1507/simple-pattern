@@ -2,4 +2,5 @@ resources
 node_modules
 .tmp
 .sass-cache
+sass/.sass-cache
 bower_components

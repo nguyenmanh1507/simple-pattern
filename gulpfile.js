@@ -10,7 +10,7 @@ var gulp        = require('gulp'),
 
 // Sass task
 gulp.task('sass', function() {
-	return sass('sass/styles.scss', {sourcemap: true})
+	return sass('sass/*.scss', {sourcemap: true})
 			.on('error', sass.logError)
 			.pipe(sourcemaps.write())
 			.pipe(gulp.dest('css'))

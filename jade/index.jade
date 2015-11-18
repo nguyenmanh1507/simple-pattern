@@ -13,6 +13,7 @@ html(lang='en')
 		//- Bower Components
 		link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css")
 		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		link(rel="stylesheet", href="css/prism.css")
 
 		style.
 			.demo-col {
@@ -127,8 +128,8 @@ html(lang='en')
 						p
 							| Lorem ipsum dolor sit amet, <strike>consectetur</strike> adipisicing elit. Minus corporis sunt eum, incidunt ex facere itaque provident quia natus dolorem, <em>ratione iure atque</em> vero inventore ipsum illum minima hic obcaecati beatae, tempora ad ducimus id?
 
-						pre
-							code
+						pre.line-numbers
+							code.language-css
 								| .row::after {
 								|		content: '';
 								|		display: table;
@@ -515,6 +516,7 @@ html(lang='en')
 		script(src="bower_components/superfish/dist/js/superfish.min.js")
 		script(src="bower_components/superfish/dist/js/hoverIntent.js")
 		script(src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js")
+		script(src="js/prism.js")
 
 		//- App scripts
 		script(src="js/app.js")

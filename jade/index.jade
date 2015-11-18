@@ -30,8 +30,38 @@ html(lang='en')
 			}
 
 	body
+		
+		//- Presentation Widget
+		.pres-widget
+			p: strong Jump to:
+			ul
+				li
+					a(href="#top") Top
+				li
+					a(href="#nav-grid") The Grid System
+				li
+					a(href="#nav-typography") Typography
+				li
+					a(href="#nav-buttons") Buttons
+				li
+					a(href="#nav-forms") Forms
+				li
+					a(href="#nav-icons") Icons
+				li
+					a(href="#nav-feedback") Feedback
+				li
+					a(href="#nav-navigation") Navigation
+				li
+					a(href="#nav-animations") Animations
+				li
+					a(href="#nav-tabs") Tabs
+				li
+					a(href="#nav-accordions") Accordions
+				li
+					a(href="#nav-carousels") Carousels
+
 		//- Presentation Header
-		.container
+		.container#top
 			header.pres-header
 				h3 Pattern Library
 				p A project from <a href="http://tutsplus.com">Tut+</a> course.
@@ -39,7 +69,7 @@ html(lang='en')
 		//- The Grid System
 		section
 			.container
-				h1 The Grid System
+				h1#nav-grid The Grid System
 				hr
 				.row
 					.col-12: .demo-col .col-12
@@ -139,7 +169,7 @@ html(lang='en')
 		//- Typography
 		section
 			.container
-				h1 Typography
+				h1#nav-typography Typography
 				hr
 
 				.row
@@ -191,7 +221,7 @@ html(lang='en')
 		//- Buttons
 		section
 			.container
-				h1 Buttons
+				h1#nav-buttons Buttons
 				hr
 
 				.row
@@ -226,7 +256,7 @@ html(lang='en')
 		//- Forms
 		section
 			.container
-				h1 Forms
+				h1#nav-forms Forms
 				hr
 
 				form(action="")
@@ -359,7 +389,7 @@ html(lang='en')
 		//- Icons
 		section
 			.container
-				h1 Icons
+				h1#nav-icons Icons
 				hr
 
 				.row
@@ -396,7 +426,7 @@ html(lang='en')
 		//- Feedback
 		section
 			.container
-				h1 Feedback
+				h1#nav-feedback Feedback
 				hr
 
 				.row
@@ -421,7 +451,7 @@ html(lang='en')
 		//- Navigation
 		section
 			.container
-				h1 Navigation
+				h1#nav-navigation Navigation
 				hr
 
 				.row.navbar-container
@@ -446,7 +476,7 @@ html(lang='en')
 		//- Animations
 		section
 			.container
-				h1 Animations
+				h1#nav-animations Animations
 				hr
 
 				.row#animations
@@ -471,7 +501,7 @@ html(lang='en')
 		//- Tabs
 		section
 			.container
-				h1 Tabs
+				h1#nav-tabs Tabs
 				hr
 
 				.tabs
@@ -496,7 +526,7 @@ html(lang='en')
 		//- Accordions
 		section
 			.container
-				h1 Accordions
+				h1#nav-accordions Accordions
 				hr
 
 				.accordion
@@ -520,7 +550,7 @@ html(lang='en')
 		//- Carousels
 		section
 			.container
-				h1 Carousels
+				h1#nav-carousels Carousels
 				hr
 
 				.cycle-slideshow(data-cycle-fx="scrollHorz", data-cycle-timeout="1000", data-cycle-caption-template="Slide no. {{slideNum}} of {{slideCount}} - {{slideTitle}}")

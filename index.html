@@ -421,7 +421,7 @@
             <p>Default</p>
             <div class="icon-circle icon-large"><i class="fa fa-coffee"></i></div>
             <p>Large</p>
-            <div class="icon-circle">.icon-huge<i class="fa fa-coffee"></i></div>
+            <div class="icon-circle icon-huge"><i class="fa fa-coffee"></i></div>
             <p>Huge</p>
           </div>
         </div>
@@ -455,5 +455,36 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="container">
+        <h1>Navigation</h1>
+        <hr>
+        <div class="row navbar-container">
+          <div class="col-4"><a class="logo"><img src="images/demo/logo.png" alt="Demo Logo"></a></div>
+          <div class="col-8">
+            <button id="rwd-trigger" class="btn">Toggle menu</button>
+            <nav>
+              <ul class="sf-menu">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a>
+                  <ul>
+                    <li><a href="#">Subitem 1</a></li>
+                    <li><a href="#">Subitem 2</a></li>
+                    <li><a href="#">Subitem 3</a></li>
+                    <li><a href="#">Subitem 4</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/superfish/dist/js/superfish.min.js"></script>
+    <script src="bower_components/superfish/dist/js/hoverIntent.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

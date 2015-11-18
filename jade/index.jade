@@ -12,6 +12,7 @@ html(lang='en')
 
 		//- Bower Components
 		link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css")
+		//- link(rel="stylesheet", href="bower_components/superfish/dist/css/superfish.css")
 
 		style.
 			.demo-col {
@@ -358,7 +359,7 @@ html(lang='en')
 							i.fa.fa-coffee
 						p Large
 
-						.icon-circle .icon-huge
+						.icon-circle.icon-huge
 							i.fa.fa-coffee
 						p Huge
 	
@@ -386,3 +387,37 @@ html(lang='en')
 						.alert-success
 							p: strong Success
 							p This is the body of the message
+		
+		//- Navigation
+		section
+			.container
+				h1 Navigation
+				hr
+
+				.row.navbar-container
+					.col-4
+						a(class="logo"): img(src="images/demo/logo.png", alt="Demo Logo")
+
+					.col-8
+						button(class="btn", id="rwd-trigger") Toggle menu
+						nav
+							ul(class="sf-menu")
+								li: a(href="#") Item 1
+								li
+									a(href="#") Item 2
+									ul
+										li: a(href="#") Subitem 1
+										li: a(href="#") Subitem 2
+										li: a(href="#") Subitem 3
+										li: a(href="#") Subitem 4
+								li: a(href="#") Item 3
+								li: a(href="#") Item 4
+
+		//- Bower Components
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="bower_components/superfish/dist/js/superfish.min.js")
+		script(src="bower_components/superfish/dist/js/hoverIntent.js")
+
+		//- App scripts
+		script(src="js/app.js")
+

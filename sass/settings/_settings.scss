@@ -18,3 +18,20 @@ $h3-size: 1.999rem;
 $h4-size: 1.414rem;
 $h5-size: 1rem;
 $h6-size: 0.707rem;
+
+// Button Variables.
+$btn-roundness: 3px;
+
+$btn-small-font-size: 0.75rem;
+$btn-large-font-size: 2rem;
+
+$btn-default-bg: #dde2d4;
+$btn-default-text-color: #333333;
+
+$btn-primary-bg: #0f82bd;
+$btn-primary-text-color: lighten($btn-primary-bg, 50%);
+
+// Form Variables
+$field-border-color: #cccccc;
+$field-error-color: red;
+$field-required-color: red;

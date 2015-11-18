@@ -9,6 +9,7 @@ html(lang='en')
 
 		//- Stylesheets
 		link(rel="stylesheet", href="css/styles.css")
+		link(rel="stylesheet", href="css/presentation.css")
 
 		//- Bower Components
 		link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css")
@@ -29,6 +30,12 @@ html(lang='en')
 			}
 
 	body
+		//- Presentation Header
+		.container
+			header.pres-header
+				h3 Pattern Library
+				p A project from <a href="http://tutsplus.com">Tut+</a> course.
+
 		//- The Grid System
 		section
 			.container
@@ -106,6 +113,28 @@ html(lang='en')
 					.col-1: .demo-col .col-1
 					.col-1: .demo-col .col-1
 					.col-1: .demo-col .col-1
+
+				hr
+
+				.row
+					.col-4
+						h5 Notes
+						p Here's a few code snippet that will explain how the grid works.
+
+					.col-8
+						pre.line-numbers
+							code.language-markup
+								|	&lt;div class=&quot;row&quot;&gt;
+								|		&lt;div class=&quot;col-4&quot;&gt;
+								|			&lt;div class=&quot;demo-col&quot;&gt;.col-4&lt;/div&gt;
+								|		&lt;/div&gt;
+								|		&lt;div class=&quot;col-4&quot;&gt;
+								|			&lt;div class=&quot;demo-col&quot;&gt;.col-4&lt;/div&gt;
+								|		&lt;/div&gt;
+								|		&lt;div class=&quot;col-4&quot;&gt;
+								|			&lt;div class=&quot;demo-col&quot;&gt;.col-4&lt;/div&gt;
+								|		&lt;/div&gt;
+								| 	&lt;/div&gt;
 		
 		//- Typography
 		section

@@ -47,4 +47,57 @@ form {
 	.required {
 		color: $field-required-color;
 	}
+
+	fieldset {
+		border-color: $field-border-color;
+		padding: 1.5em;
+		margin-bottom: $baseline;
+
+		legend {
+			font-weight: bold;
+			padding: 0 1.5em;
+		}
+	}
+
+	input[type='checkbox'],
+	input[type='radio'] {
+		display: none;
+	}
+
+	input[type='checkbox'] + label::before {
+		background: white;
+		border: 1px solid $field-border-color;
+		content: '';
+		display: inline-block;
+		height: 1.25em;
+		width: 1.24em;
+		margin: -2px 6px 0 0;
+		font-size: 0.75rem;
+		line-height: 1.25em;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	input[type='checkbox']:checked + label::before {
+		content: '\2713';
+	}
+
+	input[type='radio'] + label::before {
+		background: white;
+		border: 1px solid $field-border-color;
+		border-radius: 50%;
+		content: '';
+		display: inline-block;
+		height: 0.6em;
+		width: 0.6em;
+		font-size: 1.65em;
+		line-height: 0.6em;
+		margin: -2px 6px 0 0;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	input[type='radio']:checked + label::before {
+		content: '\2022';
+	}
 }

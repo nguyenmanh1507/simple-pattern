@@ -12,7 +12,7 @@ html(lang='en')
 
 		//- Bower Components
 		link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css")
-		//- link(rel="stylesheet", href="bower_components/superfish/dist/css/superfish.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
 
 		style.
 			.demo-col {
@@ -412,6 +412,80 @@ html(lang='en')
 										li: a(href="#") Subitem 4
 								li: a(href="#") Item 3
 								li: a(href="#") Item 4
+	
+		//- Animations
+		section
+			.container
+				h1 Animations
+				hr
+
+				.row#animations
+					.col-2
+						.demo-col bounce
+
+					.col-2
+						.demo-col flash
+
+					.col-2
+						.demo-col pulse
+
+					.col-2
+						.demo-col rubberBand
+
+					.col-2
+						.demo-col shake
+
+					.col-2
+						.demo-col swing
+	
+		//- Tabs
+		section
+			.container
+				h1 Tabs
+				hr
+
+				.tabs
+					ul.tabs-links
+						li.active
+							a(href="#tab-1") First
+						li
+							a(href="#tab-2") Second
+						li
+							a(href="#tab-3") Third
+					
+					.tabs-content
+						.tab.active#tab-1
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laudantium labore eos, nobis accusantium? Totam rem culpa, fuga saepe facere libero ea, alias, a at labore nostrum aperiam blanditiis voluptatem!
+
+						.tab#tab-2
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus similique laudantium sint labore iste asperiores explicabo, quod inventore harum qui cumque rerum fugiat rem blanditiis aliquam dolor adipisci, dolore perspiciatis maxime quam ad accusamus officia, ipsum atque.
+
+						.tab#tab-3
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa suscipit minus aperiam deleniti consequuntur tempore asperiores, ducimus assumenda, dolores, repudiandae officiis sit. Enim culpa ducimus iste vitae sapiente.
+		
+		//- Accordions
+		section
+			.container
+				h1 Accordions
+				hr
+
+				.accordion
+					.accordion-element
+						a.accordion-element-title(href="#accordion-element-1") First
+						#accordion-element-1.accordion-element-content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam tempore, repellendus numquam pariatur. Deleniti ullam, quaerat dolores.
+
+						a.accordion-element-title(href="#accordion-element-2") Second
+						#accordion-element-2.accordion-element-content
+							p Lorem ipsum dolor sit amet. Illum totam tempore, repellendus numquam pariatur. Deleniti ullam, quaerat dolores. Nam placeat tenetur adipisci temporibus perspiciatis minima, laboriosam odit accusamus deserunt?
+
+						a.accordion-element-title(href="#accordion-element-3") Third
+						#accordion-element-3.accordion-element-content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam tempore, repellendus numquam pariatur. Deleniti ullam, quaerat dolores. Nam placeat tenetur minima, laboriosam odit accusamus deserunt?
+
+						a.accordion-element-title(href="#accordion-element-4") Fourth
+						#accordion-element-4.accordion-element-content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam tempore, repellendus numquam pariatur. Deleniti ullam, quaerat dolores. Nam placeat tenetur adipisci temporibus perspiciatis minima, laboriosam odit accusamus deserunt?
 
 		//- Bower Components
 		script(src="bower_components/jquery/dist/jquery.min.js")

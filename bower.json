@@ -19,6 +19,7 @@
     "font-awesome": "fontawesome#~4.4.0",
     "superfish": "~1.7.6",
     "jquery": "~2.1.4",
-    "animate.css": "~3.4.0"
+    "animate.css": "~3.4.0",
+    "jquery-cycle2": "~2.1.6"
   }
 }

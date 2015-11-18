@@ -1,0 +1,16 @@
+.site-footer {
+	background: #121920;
+	text-align: center;
+	padding: $baseline * 2 0;
+	margin-top: $baseline * 5;
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-size: 1.5rem;
+
+		&:hover {
+			color: darken(white, 30%);
+		}
+	}
+}

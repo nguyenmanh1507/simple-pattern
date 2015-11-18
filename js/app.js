@@ -68,4 +68,9 @@
 		$(targetAccordion).slideDown();
 	});
 
+	/**
+	 * Accordions.
+	 */
+	
+
 }());

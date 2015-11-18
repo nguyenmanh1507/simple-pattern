@@ -486,11 +486,35 @@ html(lang='en')
 						a.accordion-element-title(href="#accordion-element-4") Fourth
 						#accordion-element-4.accordion-element-content
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam tempore, repellendus numquam pariatur. Deleniti ullam, quaerat dolores. Nam placeat tenetur adipisci temporibus perspiciatis minima, laboriosam odit accusamus deserunt?
+		
+		//- Carousels
+		section
+			.container
+				h1 Carousels
+				hr
+
+				.cycle-slideshow(data-cycle-fx="scrollHorz", data-cycle-timeout="1000", data-cycle-caption-template="Slide no. {{slideNum}} of {{slideCount}} - {{slideTitle}}")
+					.cycle-caption
+					.cycle-prev
+						i.fa.fa-chevron-left
+					.cycle-next
+						i.fa.fa-chevron-right
+
+					img(src="images/demo/img-1.jpg", alt="Slider image 1", data-cycle-title="First image")
+					img(src="images/demo/img-2.jpg", alt="Slider image 2", data-cycle-title="Second image")
+					img(src="images/demo/img-3.jpg", alt="Slider image 3", data-cycle-title="Third image")
+					img(src="images/demo/img-4.jpg", alt="Slider image 4", data-cycle-title="Fourth image")
+		
+		//- Footer
+		footer.site-footer
+			a(href="https://github.com/nguyenmanh1507", target="_blank") &copy; NguyenManh1507
+
 
 		//- Bower Components
 		script(src="bower_components/jquery/dist/jquery.min.js")
 		script(src="bower_components/superfish/dist/js/superfish.min.js")
 		script(src="bower_components/superfish/dist/js/hoverIntent.js")
+		script(src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js")
 
 		//- App scripts
 		script(src="js/app.js")

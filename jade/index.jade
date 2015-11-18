@@ -154,3 +154,170 @@ html(lang='en')
 					footer
 						a(href="#") This is a author.
 
+		//- Buttons
+		section
+			.container
+				h1 Buttons
+				hr
+
+				.row
+					.col-4
+						h4 Button styles
+
+						p
+							button(class="btn") Default style
+							button(class="btn-primary") Primary style
+
+					.col-4
+						h4 Button sizes
+						p
+							button(class="btn-small") Small size
+						p
+							button(class="btn") Default size
+						p
+							button(class="btn-large") Large size
+
+					.col-4
+						h4 HTML elements
+						
+						p
+							button(class="btn") Button
+						p
+							a(class="btn") Anchor tag
+						p
+							input(type="submit", class="btn", value="Submit input")
+						p
+							input(type="button", class="btn", value="Button input")
+		
+		//- Forms
+		section
+			.container
+				h1 Forms
+				hr
+
+				form(action="")
+					.row
+						.col-half
+							
+							fieldset
+								legend Inputs
+
+								.field-group
+
+									label(for="demo-input-1") This is a label
+									input(type="text", id="demo-input-1", placeholder="This is a text input")
+
+									p(class="help") This is a contextual help for the field above.
+
+								.field-group.field-error
+
+									label(for="demo-input-2") Error field
+									input(type="text", id="demo-input-2", placeholder="This is a text input")
+
+									p(class="help") This is a error message help for the field above.
+
+								.field-group
+
+									label(for="demo-textarea") This is a label
+									textarea(type="text", id="demo-textarea", cols="30", rows="10", placeholder="This is textarea")
+
+						.col-half
+
+							fieldset
+								legend Radio buttons and checkboxes
+
+								.field-group
+									input(type="radio", name="demo-radio", id="demo-radio-1")
+									label(for="demo-radio-1") Radio 1
+
+									input(type="radio", name="demo-radio", id="demo-radio-2")
+									label(for="demo-radio-2") Radio 2
+
+									input(type="radio", name="demo-radio", id="demo-radio-3")
+									label(for="demo-radio-3") Radio 3
+
+								.field-group
+									input(type="checkbox", name="demo-checkbox", id="demo-checkbox")
+									label(for="demo-checkbox") This is a checkbox 
+
+				.row
+					.col-4
+						form(action="")
+							fieldset
+								legend Sign-in Form
+
+								.field-group
+									label(for="sign-in-username") Username: 
+										span(class="required")  *
+									input(type="text", id="sign-in-username", name="sign-in-username")
+
+								.field-group
+									label(for="sign-in-pwd") Password: 
+										span(class="required")  *
+									input(type="text", id="sign-in-pwd", name="sign-in-pwd")
+
+								.field-group
+									input(type="checkbox", id="sign-in-checkbox", name="sign-in-checkbox")
+									label(for="sign-in-checkbox") Remember me: 
+
+								.field-group
+									input(type="submit", class="btn", value="Sign In")
+
+								p: em required fields 
+									span(class="required")  *
+
+					.col-4
+						form(action="")
+							fieldset
+								legend Sign-up Form
+
+								.field-group
+									label(for="sign-up-email") Email address:
+										span(class="required")  *
+									input(type="email", id="sign-up-email", name="sign-up-email")
+
+								.field-group
+									label(for="sign-up-pwd") Password:
+										span(class="required")  *
+									input(type="password", id="sign-up-pwd", name="sign-up-pwd")
+
+								.field-group
+									label(for="sign-up-confirm-pwd") Confirm Password:
+										span(class="required")  *
+									input(type="password", id="sign-up-confirm-pwd", name="sign-up-confirm-pwd")
+
+								.field-group
+									input(type="submit", class="btn", value="Sign Up")
+
+								p: em required fields 
+									span(class="required")  *
+
+					.col-4
+						form(action="")
+							fieldset
+								legend Contact Form
+
+								.field-group
+									label(for="contact-name") Name:
+										span(class="required")  *
+									input(type="email", id="contact-name", name="contact-name")
+
+								.field-group
+									label(for="contact-email") Email address:
+										span(class="required")  *
+									input(type="email", id="contact-email", name="contact-email")
+
+								.field-group
+									label(for="contact-website") Website:
+									input(type="url", id="contact-website", name="contact-website")
+
+								.field-group
+									label(for="contact-textarea") Message:
+										span(class="required")  *
+									textarea(cols="30", rows="10", id="contact-textarea", name="contact-textarea", class="field-fw")
+
+								.field-group
+									input(type="submit", class="btn", value="Send Message")
+
+								p: em required fields 
+									span(class="required")  *

@@ -91,4 +91,3 @@ This document will describe the structure of each pattern and its behaviour unde
 **Description**
 
 - Will use the Cycle2 jQuery plugin
-

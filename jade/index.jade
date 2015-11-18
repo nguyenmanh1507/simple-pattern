@@ -10,6 +10,9 @@ html(lang='en')
 		//- Stylesheets
 		link(rel="stylesheet", href="css/styles.css")
 
+		//- Bower Components
+		link(rel="stylesheet", href="bower_components/font-awesome/css/font-awesome.min.css")
+
 		style.
 			.demo-col {
 				background: #DEF0FA;
@@ -320,4 +323,41 @@ html(lang='en')
 									input(type="submit", class="btn", value="Send Message")
 
 								p: em required fields 
-									span(class="required")  *
+									span(class="required")  * 
+
+		//- Icons
+		section
+			.container
+				h1 Icons
+				hr
+
+				.row
+					.col-half
+						h4 Bordered Icons
+						
+						.icon-circle
+							i.fa.fa-coffee
+						p Circle
+
+						.icon-rounded
+							i.fa.fa-coffee
+						p Rounded
+
+						.icon-square
+							i.fa.fa-coffee
+						p Square
+
+					.col-half
+						h4 Icons sizes
+						
+						.icon-circle
+							i.fa.fa-coffee
+						p Default
+
+						.icon-circle.icon-large
+							i.fa.fa-coffee
+						p Large
+
+						.icon-circle.icon-huge
+							i.fa.fa-coffee
+						p Huge
